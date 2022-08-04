@@ -4,26 +4,16 @@ var UpperList = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 var LowerList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var NumList = ["1","2","3","4","5","6","7","8","9"];
 var SpecList = ["!","@","#","$","%","&","*","?","*"];
-var generatePassword = ""
-
-
-
 
 //Write password to the #password input
 function writePassword() {
- var password = generatePassword();
-var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+//var password = generatePassword();
+//var passwordText = document.querySelector("#password");
+//var passwordText = "test"
+ // passwordText.value = password;
 
 }
 
-//Add event listener to generate button
-
-//generateBtn.addEventListener("click", writePassword);
-generateBtn.addEventListener("click", e => {
-  e.preventDefault()
-})
 
 
 //If Cancel incl_Upper will be false
@@ -71,13 +61,6 @@ if(incl_Spec === true) {
 const Pass = UpperList.concat(LowerList).concat(NumList).concat(SpecList)
 console.log(Pass)
 
-//Write password to the #password input
-function writePassword() {
- //var password = generatePassword();
- var passwordText = document.querySelector("#password");
- let randomItem = Pass[Math.floor(Math.random()*Pass.length)];
- 
-}
   
  console.log(Pass)
  
