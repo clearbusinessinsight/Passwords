@@ -8,38 +8,47 @@ var SpecList = ["!","@","#","$","%","&","*","?","*"];
 //If Cancel incl_Upper will be false
 var incl_Upper = window.confirm("Press OK to include Upper case letters or Cancel to Skip.")
 if(incl_Upper === true) {
-const PassPart1 = UpperList
-  console.log(PassPart1)
+
+  console.log(UpperList)
 } else {
+  UpperList.length = 0
   console.log("You pressed Cancel")
+  console.log(UpperList)
 }
 
 //If Cancel incl_Lpper will be false
 var incl_Lower = window.confirm("Press OK to include Lower case letters or Cancel to skip.")
 if(incl_Lower === true) {
-  const PassPart2 = LowerList
-  console.log(PassPart2)
+  
+  console.log(LowerList)
   } else {
+    LowerList.lenght = 0
     console.log("You pressed Cancel")
+    console.log(LowerList)
   }
 
 //If Cancel incl_Num will be false
 var incl_Num = window.confirm("Press OK to include Numbers or Cancel to Skip.")
 if(incl_Num === true) {
-  const PassPart3 = NumList
-  console.log(PassPart3)
+  
+  console.log(NumList)
   } else {
+    NumList.length = 0
     console.log("You pressed Cancel")
   }
 
 //If Cancel incl_Spec will be false
 var incl_Spec = window.confirm("Press OK to include Special Characters or Cancel to skip.")
 if(incl_Spec === true) {
-  const PassPart4 = SpecList
-  console.log(PassPart4)
+  
+  console.log(SpecList)
   } else {
+    SpecList.length = 0
     console.log("You pressed Cancel")
   }
+
+const Pass = UpperList.concat(LowerList).concat(NumList).concat(SpecList)
+console.log(Pass)
 
 
 // Write password to the #password input
