@@ -1,10 +1,20 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+generateBtn.addEventListener("click", writePassword);
+ 
 var UpperList = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var LowerList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var NumList = ["1","2","3","4","5","6","7","8","9"];
 var SpecList = ["!","@","#","$","%","&","*","?","*"];
-var newtext = " "
+var CharNum = "8"
+
+// Set the number of Characters
+var CharNum = window.prompt("How many Characters would you like?")
+if(CharNum === null) {
+ CharNum = "8"
+}
+console.log(CharNum)
+
 
 //If Cancel incl_Upper will be false
 var incl_Upper = window.confirm("Press OK to include Upper case letters or Cancel to Skip.")
@@ -39,24 +49,22 @@ if(incl_Spec === true) {
     SpecList.length = 0
   }
 
-const Pass = UpperList.concat(LowerList).concat(NumList).concat(SpecList)
+  const Pass = UpperList.concat(LowerList).concat(NumList).concat(SpecList)
 
- //Add event listener to generate button
+  
  
- generateBtn.addEventListener("click", writePassword);
-
  //Write password to the #password input
 function writePassword(array) {
-  // Pass is the array
-  //newtext is a string
-//let newtext = Pass.toString();
+  String(passwordText = "");
+
 return array[Math.floor(Math.random() * array.length)]
 
 }
 result = "";
-for (var i = 0; i < 8; i++) {
+for (var i = 0; i < CharNum; i++) {
   result += writePassword(Pass)
-}
+  // document.getElementById("#password").innerHTML = result;
+  }
 
 console.log(result)
 
