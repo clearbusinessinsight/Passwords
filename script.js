@@ -4,15 +4,33 @@ var UpperList = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 var LowerList = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var NumList = ["1","2","3","4","5","6","7","8","9"];
 var SpecList = ["!","@","#","$","%","&","*","?","*"];
+var newtext = " "
 
-//Write password to the #password input
-function writePassword() {
+
 //var password = generatePassword();
 //var passwordText = document.querySelector("#password");
 //var passwordText = "test"
  // passwordText.value = password;
+// ------------------------
+// Pass is the conbined string
 
-}
+// return array[Math.floor(Math.random() * Pass.length)]
+// }
+// for (var i = 0; i< 8; i++) {
+// result += writePassword()
+// }
+// console.log(array);
+
+
+// let result = ' ';
+// const charactersLength = Pass.length;
+// for ( let i = 0; i <length; i++ ) {
+//   result += characters.charAt(Math.floor(Math.random() * charactersLength))
+// }
+
+// return result;
+
+// }
 
 
 
@@ -61,11 +79,23 @@ if(incl_Spec === true) {
 const Pass = UpperList.concat(LowerList).concat(NumList).concat(SpecList)
 console.log(Pass)
 
-  
- console.log(Pass)
+
  
  
  //Add event listener to generate button
  
  generateBtn.addEventListener("click", writePassword);
 
+ //Write password to the #password input
+function writePassword() {
+  // Pass is the array
+  //const newtext = Pass
+let newtext = Pass.toString();
+  
+ // document.getElementById("demo");
+
+  
+  console.log(Pass)
+  console.log(newtext);
+  
+}
