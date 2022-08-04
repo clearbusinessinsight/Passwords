@@ -77,7 +77,7 @@ if(incl_Spec === true) {
   }
 
 const Pass = UpperList.concat(LowerList).concat(NumList).concat(SpecList)
-console.log(Pass)
+//console.log(Pass)
 
 
  
@@ -87,15 +87,26 @@ console.log(Pass)
  generateBtn.addEventListener("click", writePassword);
 
  //Write password to the #password input
-function writePassword() {
+function writePassword(array) {
   // Pass is the array
-  //const newtext = Pass
-let newtext = Pass.toString();
-  
- // document.getElementById("demo");
+  //newtext is a string
+//let newtext = Pass.toString();
+return array[Math.floor(Math.random() * array.length)]
+}
+result = "";
+for (var i = 0; i < 8; i++) {
+  result += writePassword(Pass)
+}
+console.log(result)
+
+
+
+
+
+
+
 
   
-  console.log(Pass)
-  console.log(newtext);
+  //console.log(Pass)
+  // console.log(newtext);
   
-}
