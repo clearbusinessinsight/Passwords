@@ -14,3 +14,19 @@ If you choose to skip them all the program selects a few for you.
 
 Please make sure to refresh between instances so all value are cleared out.
 
+
+
+
+https://clearbusinessinsight.github.io/Passwords/
+
+https://github.com/clearbusinessinsight/Passwords
+
+
+
+![](../../../../Downloads/Password%20Generator%20(1).gif)
+
+
+
+
+
+
